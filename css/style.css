@@ -78,10 +78,8 @@ a{
 }
 
 .header{
-    /* background-image: url(../images/bg-image.jpg);
-     */
-    background-color: #fff;
-     background-position: center;
+    background-color: rgba(201, 204, 203, 0.099);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -180,8 +178,7 @@ a{
 }
 
 .skills{
-    /* background-image: url(../images/bg-image2.jpg);     */
-    background-color: #fff;
+    background-color: rgba(201, 204, 203, 0.099);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -190,9 +187,7 @@ a{
     padding-bottom: 214px;
     font-family: 'rubik-medium';
     display: flex;
-    justify-content: flex-end;
-    
-    
+    justify-content: flex-end;    
 
 }
 
@@ -214,8 +209,7 @@ a{
 }
 
 .education{
-    /* background-image: url(../images/bg-image.jpg); */
-    background-color: #fff;
+    background-color: rgba(201, 204, 203, 0.099);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -265,8 +259,7 @@ a{
 }
 
 .work{
-    /* background-image: url(../images/bg-image2.jpg); */
-    background-color: #fff;
+    background-color: rgba(201, 204, 203, 0.099);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -313,7 +306,7 @@ a{
 }
 
 .footer{
-    background-color: #fff;
+    background-color: rgba(201, 204, 203, 0.099);
 }
 
 .footer__inner{
