@@ -78,7 +78,7 @@ a{
 }
 
 .header{
-    background-color: rgba(201, 204, 203, 0.099);
+    background-color: #fff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -178,7 +178,7 @@ a{
 }
 
 .skills{
-    background-color: rgba(201, 204, 203, 0.099);
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -209,7 +209,7 @@ a{
 }
 
 .education{
-    background-color: rgba(201, 204, 203, 0.099);
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -259,7 +259,7 @@ a{
 }
 
 .work{
-    background-color: rgba(201, 204, 203, 0.099);
+    background-color: #fff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -306,7 +306,7 @@ a{
 }
 
 .footer{
-    background-color: rgba(201, 204, 203, 0.099);
+    background-color: #fff;
 }
 
 .footer__inner{
