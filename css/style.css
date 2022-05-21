@@ -552,6 +552,13 @@ a{
         margin-bottom: 30px;
         font-size: 30px;
     }
+    .header,
+    .skills,
+    .education,
+    .work{
+        margin-top: 20px;
+    }
+
     .skills__list {
         font-size: 14px;
         line-height: 18px;
