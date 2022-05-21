@@ -555,7 +555,10 @@ a{
 }
 
 @media (max-width: 480px){
-    .header__title{
+    .header__title,
+    .skills__description,
+    .education__inner,
+    .work__inner{
         background-color: #f7f7f7ad;
     }
     .header__top {
