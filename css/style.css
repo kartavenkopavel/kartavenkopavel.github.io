@@ -78,7 +78,7 @@ a{
 }
 
 .header{
-    background-color: #fff;
+    background-image: url(../images/header_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,7 +90,7 @@ a{
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
-    color: rgb(66, 66, 66); 
+    color: #5F403B; 
 }
 
 .header__inner{
@@ -178,9 +178,10 @@ a{
 }
 
 .skills{
-    background-color: #fff;
+    background-image: url(../images/skills_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .skills__inner{
@@ -209,9 +210,10 @@ a{
 }
 
 .education{
-    background-color: #fff;
+    background-image: url(../images/edu_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .education__inner{
@@ -259,7 +261,7 @@ a{
 }
 
 .work{
-    background-color: #fff;
+    background-image: url(../images/work_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -306,7 +308,7 @@ a{
 }
 
 .footer{
-    background-color: #fff;
+    background-color: #f7f7f7;
 }
 
 .footer__inner{
@@ -345,7 +347,7 @@ a{
 }
 
 
-.icon-img :last-child:{
+.icon-img :last-child{
     margin-right: 0;
 }
 
@@ -543,11 +545,6 @@ a{
     }
     .header__name {
         line-height: 40px;
-    }
-    .skills__inner,
-    .education__inner,
-    .work__inner{
-        padding-bottom: 0;
     }
     .title{
         padding: 0;
