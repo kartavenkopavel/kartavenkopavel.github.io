@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-*{scroll-behavior: smooth; } 
-
 @font-face {
     font-family: 'rubik-regular';
     src: url('../fonts/Rubik-Regular.woff2') format('woff2'),
@@ -42,70 +40,42 @@
     font-display: swap;
 }
 
-.scrollup{
-    font-family: 'rubik-bold';
-    text-transform: uppercase;
-    font-size: 14px;
-    width:80px;
-    height:20px;
-    opacity:0.3;
-    position:fixed;
-    bottom:50px;
-    right:50px;
-    display: none;
-    }
-
-.body{
-    font-family: 'rubik-regular';
-    font-size: 16px;
-    line-height: 19;
-    font-weight: 400;
-}
-
-a{
-    font-family: 'rubik-bold';
-    color: inherit;
-    text-decoration: none;    
-}
-
-
-.title{
-    font-family: 'rubik-bold';
-    font-size: 60px;
-    line-height: 60px;
-    text-transform: uppercase;
-    padding: 80px 0 50px;
-}
-
-.header{
-    background-image: url(../images/header_bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .container{
     max-width: 1220px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
-    color: #191919; 
+    color: #000000;
 }
 
-.header__inner{
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 90vh;
+.header,
+.main,
+.footer{
+    background-color: #f7f7f7;
+}
+
+a{
+    font-family: 'rubik-bold';
+    color: inherit;
+    text-decoration: none;
+    font-weight: 900;    
+}
+
+.title{
+    font-family: 'rubik-bold';
+    font-size: 35px;
+    line-height: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 35px 0 30px;
 }
 
 .header__top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 75px 0 30px;
+    padding: 40px 0 70px;
 }
 
 .menu__list{
@@ -116,6 +86,18 @@ a{
     margin-right: 30px;
 }
 
+.button{
+    color: #fff;
+    background-color: #000000;
+    border-radius: 5px;    
+    transition: color .7s;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: #a44528;
+}
+
 .email,
 .menu__link{
     text-transform: uppercase;
@@ -124,118 +106,98 @@ a{
     transition: color .5s;
 }
 
+
 .menu__link:hover{
-    color: #CB0E0E;
+    color: #a44528;
 }
 
-.header__content{    
+
+.main__inner{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-right: 80px;
-    
+}
+
+.icon-img{
+    margin: 20px 20px 0 20px;
+    width: 60px;
+    height: 60px;
 }
 
 .portfolio__photo{
-    width: 365;
-    height: 480px;
-    margin-top: 20px;     
+    height: 365px;
+    margin-top: 80px; 
+    border-radius: 50%;
+    align-items: center;
 }
 
-.header__title{    
-    
-    margin-bottom: 50px;
-    max-width: 600px;
-    padding: 0;
+.photo{
+    padding-right: 20px;
+    text-align: center;
 }
 
-.header__name{
+.name{
     font-family: 'rubik-bold';
-    font-size: 60px;
-    line-height: 60px;
-    text-align: center;
+    font-size: 40px;
+    line-height: 40px; 
+    padding-top: 30px;
 }
 
-.header__position{
+.position{
     font-family: 'rubik-medium';
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 30px;
 }
 
-.header__text{
-    font-family: 'rubik-regular';
-    text-align: left;
-    font-size: 16px;
-    line-height: 19px;
+.slider{
+    width: 700px;
 }
 
-.header__text p{
-    margin-bottom: 10px;
+p{
+    padding-bottom: 10px;
 }
 
-.skills{
-    background-image: url(../images/skills_bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.skills__inner{
-    padding-bottom: 214px;
+.description{
     font-family: 'rubik-medium';
-    display: flex;
-    justify-content: flex-end;    
+    padding: 40px;
+    line-height: 22px;
+}
+
+.slider__arrow{
+    cursor: pointer;
+    cursor:grab;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
 
 }
 
-
-.skills__list{
-    width: 500px;       
-    font-size: 20px;
-    line-height: 22px;    
-    list-style: none; 
-    margin-right: 140px;
+.slider__arrow-left{
+    left: -30px;
 }
 
-.skills__list li{
+.slider__arrow-right{
+    right: -30px;
+}
+
+.skills__list,
+.edu__list,
+.work__list{
+    list-style: none;
+}
+
+.skills__item{
     padding-bottom: 10px;
 }
 
 .skills__item span{
-    font-weight: bold;
-}
-
-.education{
-    background-image: url(../images/edu_bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.education__inner{
-    padding-bottom: 214px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.education__box-list{       
-    display: block;
-    justify-content: flex-end;
-    width: 500px;
-    margin-top: 50px;        
-    font-size: 24px;
-    line-height: 28px;     
-    margin-right: 140px;
+    font-family: 'rubik-bold';
 }
 
 .edu__list-title{
     font-family: 'rubik-medium-italic';
-    margin-bottom: 5px;
     font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 5px;
 }
 
 .edu__list-title span{
@@ -244,81 +206,29 @@ a{
 }
 
 .edu__list{
-    font-family: 'rubik-medium';
-    font-size: 18px;
-    line-height: 22px;
-    list-style: none;
-    width: 500px;
-}
-
-.edu__list-item:last-child{
     margin-bottom: 30px;
-}
-
-.edu__list-item {
-    margin-bottom: 5px;
-    margin-left: 3px;
-}
-
-.work{
-    background-image: url(../images/work_bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.work__inner{
-    padding-bottom: 214px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.work__box-list{
-    display: block;
-    justify-content: flex-end;
-    width: 500px;
-    margin-top: 50px;        
-    font-size: 24px;
-    line-height: 28px;
-    margin-right: 140px;
 }
 
 .work__list-title{
     font-family: 'rubik-medium-italic';
-    margin-bottom: 5px;
     font-weight: bold;
-}
-
-.work__list-title span{
-    font-family: 'rubik-medium';
-    font-weight: bold;   
-}
-
-.work__list{
-    font-family: 'rubik-medium';
     font-size: 18px;
-    line-height: 22px;
-    list-style: none;
-    width: 470px;
+    padding-bottom: 5px;
 }
 
-.work__list-item{    
-    margin-bottom: 5px;
-    margin-left: 3px;
-}
-
-.footer{
-    background-color: #f7f7f7;
+.work__list-title span{    
+    font-family: 'rubik-medium';
+    font-weight: bold;    
 }
 
 .footer__inner{
-    padding: 50px 0 80px;
+    padding: 50px 0 50px;
 }
 
 .footer__title{
     font-family: 'rubik-bold';
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 35px;
+    line-height: 35px;
     text-transform: uppercase;
     padding: 30px 0 30px;
     text-align: center;
@@ -347,270 +257,115 @@ a{
 }
 
 
-.icon-img :last-child{
-    margin-right: 0;
-}
-
-@media (max-width: 1260px){
-    .header,
-    .skills,
-    .education,
-    .work{
-        background-position: left;
-    }
-    .title{
-        padding: 80px 50px;
-    }
-}
-
-@media (max-width: 1160px) {
-    .container{
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .header__inner{
-        padding-bottom: 140px;
-    }
-    .email,
-    .menu__link{
-        font-size: 18px;
-    }
-    .header__title {
-        margin-left: 110px;
-    }
-    .portfolio__photo {        
-        height: 440px;
-    }
-    .header__name {
-        font-size: 50px;
-        line-height: 50px;
-    }
-    .header__position {
-        font-size: 50px;
-        line-height: 50px;
-    }
-    .header__text {
-        font-size: 14px;
-        line-height: 20px;
-    }
-    .scrollup{
-        bottom:20px;
-        right:20px;
-    }
-}
-
-@media (max-width: 1030px){
-    .header__name {
-        font-size: 40px;
-    }
-    .header__position {
-        font-size: 40px;
-        line-height: 40px;
-    }
-    .header__text {
-        font-size: 12px;
-
-    }
-    .title{
-        font-size: 50px;
-        line-height: 50px;
-    }
-    .skills__list{
-        font-size: 18px;
-        line-height: 22px;
-    }
-    .education__box-list {
-        font-size: 20px;
-    }
-    .edu__list {
-        font-size: 16px;
-    }
-    .work__box-list {
-        font-size: 20px;
-    }
-    .work__list{
-        font-size: 16px;
+@media (max-width: 1280px) {
+    .slider__arrow-left{
+        left: -5px;
     }
     
+    .slider__arrow-right{
+        right: -5px;
+    }
 }
 
-@media (max-width: 945px){
-    .header__content {
-        width: 100%;
+@media (max-width: 1140px){
+    .main__inner{
+        display: grid;
+        justify-content: center;
     }
-    .header__inner{
-        padding-bottom: 10px;
+    .photo{
+        padding: 0;
     }
-    
 }
 
 @media (max-width: 870px){
-    .portfolio__photo{
-        height: 240px;
-    }
-    .header__name {
-        font-size: 30px;
-    }
-    .header__position {
-        font-size: 30px;
-        line-height: 30px;
-    }
-    .education__box-list{
-        margin-top: 0;
-    }
-    .work__box-list{
-        margin-top: 0;
-    }
-    .skills__list{
-        margin-right: 0;
-    }
-    .education__box-list{
-        margin-right: 0;
-    }
-    .work__box-list{
-        margin-right: 0;
-    }
-}
-
-@media (max-width: 800px){
-    .email,
-    .menu__link{
-        font-size: 14px;
-    }
-    .title {
-        font-size: 40px;
-        line-height: 40px;
-    }
-    .footer__inner {
-        padding: 50px 0 60px;
-    }
-    .icon-img{
-        width: 40px;
-        height: 40px;
-    }
-    
-    .icon-img:hover{
-        width: 60px;
-        height: 60px;
-    }
-    .footer__title {
-        font-size: 30px;
-        line-height: 30px;;
-        padding: 30px 0 20px;
-    }
-}
-
-@media (max-width: 645px){
-    .header,
-    .skills,
-    .education,
-    .work{
-        background-position: right;
-    }
     .menu__list {
         display: block;
     }
-    .portfolio__photo{
-        margin-top: 0;
-        margin-bottom: 20px;
+    .menu__item {
+        padding-bottom: 5px;
     }
-    .header__content {
-        display: block;
-        margin: 0;
-    }
-    .header__title{
-        margin: 0;
-    }
-    .skills__list {
-        font-size: 16px;
-        line-height: 20px;
-    }
-    .title{
-        width: 100%;
-        text-align: center;
-    }
-    .skills__list {
-        width: 100%;
-        margin: 10px;
-    }
-    .education__box-list {
-        width: 100%;
-        margin: 10px;
-    }
-    .edu__list{
-        width: 100%;
-    }
-    .work__list{
-        width: 100%;
-    }
-    .skills__inner,
-    .education__inner,
-    .work__inner{
-        padding-bottom: 10px;
-    }
-    .header__top {
-        padding: 30px 0 30px;
-    }
-        
 }
 
-@media (max-width: 480px){
-    .header__title,
-    .skills__description,
-    .education__inner,
-    .work__inner{
-        background-color: #f7f7f7ad;
+@media (max-width: 730px){
+    .slider__arrow-left{
+        left: 40%;
+        width: 20px;
+        height: 20px;
+    }    
+    .slider__arrow-right{
+        right: 40%;
+        width: 20px;
+        height: 20px;
     }
-    .header__top {
+    .slider__arrow{
+        top: 100%;    
+    }
+    .description{
+        padding: 20px;
+        font-size: 18px;
+        font-family: 'rubik-regular';
+    }
+    .slider{
+        width: 500px;
+    }
+    
+}
+
+@media (max-width: 560px){
+.email,
+.menu__link{
+    font-size: 18px;
+    line-height: 20px;
+}
+.header__top{
+    padding: 20px 0 10px;
+}
+.footer__title{
+    font-size: 30px;
+    line-height: 30px;
+    padding: 30px 0 10px;
+}
+.icon-img {
+    width: 40px;
+    height: 40px;    
+    transition: .5s;
+}
+.icon-img:hover{   
+    width: 60px;
+    height: 60px; 
+}
+.slider{
+    width: 400px;
+}
+.description{
+    font-size: 16px;
+    line-height: 18px;
+}
+.portfolio__photo{
+    height: 240px;
+    margin-top: 40px;
+}
+
+}
+
+@media (max-width: 440px){
+    .header__top{
         display: block;
-        padding: 30px 0 30px;
+        padding-left: 25px;
     }
-    .header__name {
-        line-height: 40px;
+    .name{
+        font-size: 35px;
+        line-height: 32px;
     }
     .title{
-        padding: 0;
-        margin-top: 60px;
-        margin-bottom: 30px;
         font-size: 30px;
+        line-height: 30px;
     }
-    .header,
-    .skills,
-    .education,
-    .work{
-        margin-top: 20px;
+    .slider{
+        width: 340px;
     }
-
-    .skills__list {
+    .description{
         font-size: 14px;
-        line-height: 18px;
-    }
-    .education__box-list {
-        font-size: 16px;
-        line-height: 20px;
-    }
-    .edu__list {
-        font-size: 14px;
-        line-height: 18px;
-    }
-    .work__box-list {
-        font-size: 16px;
-    }
-    .work__list {
-        font-size: 14px;
-        line-height: 18px;
-    }
-    .icon-img {
-        width: 30px;
-        height: 30px;
-        margin: 14px;
-    }
-    .icon-img:hover{
-        width: 45px;
-        height: 45px;
-    }
-    .footer__title {
-        font-size: 25px;
-        line-height: 25px;
+        line-height: 16px;
     }
 }
