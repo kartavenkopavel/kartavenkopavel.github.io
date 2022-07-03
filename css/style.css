@@ -74,11 +74,11 @@ a{
     font-size: 60px;
     line-height: 60px;
     text-transform: uppercase;
-    padding: 80px 0 50px;
+    padding: 50px 0 50px;
 }
 
 .header{
-    background-image: url(../images/header_bg.jpg);
+    background-image: url(../images/header-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,7 +93,14 @@ a{
     color: #191919; 
 }
 
-.header__inner{
+.about{
+    background-image: url(../images/about_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about__inner{
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -136,12 +143,12 @@ a{
     color: #CB0E0E;
 }
 
-.header__content{    
+.about__content{    
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
     margin-top: 50px;
-    margin-right: 80px;
+    margin-right: 40px;
+    margin-left: 40px;
     
 }
 
@@ -151,21 +158,21 @@ a{
     border-radius: 50%;
 }
 
-.header__title{    
-    
+.about__title{    
+    margin-left: 30px;
     margin-bottom: 50px;
     max-width: 600px;
     padding: 0;
 }
 
-.header__name{
+.about__name{
     font-family: 'rubik-bold';
     font-size: 60px;
     line-height: 60px;
     text-align: center;
 }
 
-.header__position{
+.about__position{
     font-family: 'rubik-medium';
     font-size: 60px;
     line-height: 60px;
@@ -174,14 +181,14 @@ a{
     margin-bottom: 50px;
 }
 
-.header__text{
+.about__text{
     font-family: 'rubik-regular';
     text-align: left;
     font-size: 16px;
     line-height: 19px;
 }
 
-.header__text p{
+.about__text p{
     margin-bottom: 10px;
 }
 
@@ -193,7 +200,6 @@ a{
 }
 
 .skills__inner{
-    padding-bottom: 214px;
     font-family: 'rubik-medium';
     display: flex;
     justify-content: flex-end;    
@@ -225,7 +231,6 @@ a{
 }
 
 .education__inner{
-    padding-bottom: 214px;
     display: flex;
     justify-content: flex-end;
 }
@@ -233,8 +238,7 @@ a{
 .education__box-list{       
     display: block;
     justify-content: flex-end;
-    width: 500px;
-    margin-top: 50px;        
+    width: 500px;       
     font-size: 24px;
     line-height: 28px;     
     margin-right: 140px;
@@ -276,7 +280,6 @@ a{
 }
 
 .work__inner{
-    padding-bottom: 214px;
     display: flex;
     justify-content: flex-end;
 }
@@ -284,8 +287,7 @@ a{
 .work__box-list{
     display: block;
     justify-content: flex-end;
-    width: 500px;
-    margin-top: 50px;        
+    width: 500px;      
     font-size: 24px;
     line-height: 28px;
     margin-right: 140px;
@@ -315,12 +317,10 @@ a{
     margin-left: 3px;
 }
 
-.footer{
-    background-color: #f7f7f7;
-}
+
 
 .footer__inner{
-    padding: 50px 0 80px;
+    padding: 60px 0 50px;
 }
 
 .footer__title{
@@ -360,6 +360,7 @@ a{
 }
 
 @media (max-width: 1260px){
+    .about,
     .header,
     .skills,
     .education,
@@ -375,32 +376,31 @@ a{
     .container{
         padding-left: 30px;
         padding-right: 30px;
-    }
-    .header__content{
-        margin-right: 20px;
-    }
-    .header__inner{
+    }   
+    .about__inner{
         padding-bottom: 140px;
+    }
+    .about__content{
+        margin-right: 0;
+        margin-left: 0;
     }
     .email,
     .menu__link{
         font-size: 18px;
     }
-    .header__title {
-        margin-left: 110px;
-    }
+    
     .portfolio__photo {        
         height: 330px;
     }
-    .header__name {
+    .about__name {
         font-size: 50px;
         line-height: 50px;
     }
-    .header__position {
+    .about__position {
         font-size: 50px;
         line-height: 50px;
     }
-    .header__text {
+    .about__text {
         font-size: 14px;
         line-height: 20px;
     }
@@ -411,23 +411,20 @@ a{
 }
 
 @media (max-width: 1030px){
-    .header__content {
+    .about {
         margin-right: 20px;
     }
     .portfolio__photo {
         height: 300px;
     }
-    .header__title {
-        margin-left: 80px;
-    }
-    .header__name {
+    .about__name {
         font-size: 40px;
     }
-    .header__position {
+    .about__position {
         font-size: 40px;
         line-height: 40px;
     }
-    .header__text {
+    .about__text {
         font-size: 14px;
 
     }
@@ -455,15 +452,33 @@ a{
 }
 
 @media (max-width: 945px){
-    .header__content {
-        width: 100%;
+    .header__top{
+        display: block;
     }
-    .header__inner{
+    .menu__item{
+        margin-bottom: 15px;
+    }
+    .about__content{
+        display: block;
+    }
+    .about__title{
+        max-width: none;
+        margin: 0;
+    }
+    .about__inner{
         padding-bottom: 10px;
     }
-    .header__text {
+    .about__text {
         font-size: 12px;
 
+    }
+    img{
+        display: block;
+        margin: 0 auto; 
+      }
+    .portfolio__photo{
+        margin-top: 0;
+        margin-bottom: 20px;
     }    
 }
 
@@ -471,7 +486,7 @@ a{
     .portfolio__photo{
         height: 240px;
     }
-    .header__name {
+    .about__name {
         font-size: 30px;
     }
     .header__position {
@@ -498,14 +513,14 @@ a{
 @media (max-width: 800px){
     .email,
     .menu__link{
-        font-size: 14px;
+        font-size: 17px;
     }
     .title {
         font-size: 40px;
         line-height: 40px;
     }
     .footer__inner {
-        padding: 50px 0 60px;
+        padding: 10px 0 50px;
     }
     .icon-img{
         width: 40px;
@@ -524,30 +539,24 @@ a{
 }
 
 @media (max-width: 645px){
+    .about,
     .header,
     .skills,
     .education,
     .work{
         background-position: right;
     }
+    
+    .about__title{
+        margin-left: 0;
+    }
+    .menu__item{
+        margin-bottom: 0;
+    }
     .menu__list {
         display: block;
     }
-    img{
-        display: block;
-        margin: 0 auto; 
-      }
-    .portfolio__photo{
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
-    .header__content {
-        display: block;
-        margin: 0;
-    }
-    .header__title{
-        margin: 0;
-    }
+       
     .skills__list {
         font-size: 16px;
         line-height: 20px;
@@ -570,6 +579,7 @@ a{
     .work__list{
         width: 100%;
     }
+    .about__inner,
     .skills__inner,
     .education__inner,
     .work__inner{
@@ -582,7 +592,7 @@ a{
 }
 
 @media (max-width: 480px){
-    .header__title,
+    .about__inner,
     .skills__description,
     .education__inner,
     .work__inner{
@@ -590,9 +600,9 @@ a{
     }
     .header__top {
         display: block;
-        padding: 30px 0 30px;
+        padding: 30px 0 10px;
     }
-    .header__name {
+    .about__name {
         line-height: 40px;
     }
     .title{
@@ -601,6 +611,7 @@ a{
         margin-bottom: 30px;
         font-size: 30px;
     }
+    .about,
     .header,
     .skills,
     .education,
@@ -639,5 +650,8 @@ a{
     .footer__title {
         font-size: 25px;
         line-height: 25px;
+    }
+    .footer__inner{
+        padding: 10px 0 50px;
     }
 }
